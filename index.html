@@ -1,0 +1,222 @@
+<!doctype html>
+<!-- Defining hte Language -->
+<html lang="en">
+    <head>
+        <!-- Webpage Title -->
+        <title>TMPM: Home</title>
+        <!-- Importing style.css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- Importing the character set -->
+        <meta charset="UTF-8">
+        <!-- Importing a font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+        <!--Importing a Favicon-->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- Internal CSS -->
+        <style>
+            #ceoText {
+            line-height: 3; /*Making the lines in the CEO section wider */
+            }
+            .whiteText { /*Class for all text that is white*/
+            padding-left: 15px;
+            line-height: 2;
+            }
+            .space {
+            font-weight: bold;
+            line-height: 2;
+            font-family: Open Sans !important;
+            }
+            .orangeText { /*All text that should be Orange*/
+            padding-left: 15px;
+            color: #DFA974;
+            }
+            h1, h2, a, h3, th, td {
+            /*Giving all the elements in this website the font "Open Sans"*/
+            font-family: 'Open Sans', sans-serif;
+            }
+            p {
+            /*Giving all p elements in this website the Roboto font, which complements the Open Sans font nicely*/
+            font-family: 'Roboto', sans-serif;
+            }
+            #topBar {
+            /*Styling the Top Bar*/
+            margin: 0;
+            padding-top: 0px;
+            background-color: #DFA974;
+            }
+            #Title {
+            /*Styling the Title Image*/
+            margin: 0px;
+            margin-left: 10px !important;
+            padding-left: 5px !important;
+            border: 1px;
+            font-size: 35px;
+            color: white;
+            text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Startup Sound in iFrame to ensure compatability -->
+        <iframe src="other/doorOpen.mp3" allow="autoplay" style="display:none" id="iframeAudio"> </iframe>
+        <!--Company Logo-->
+        <div id="topBar">
+            <img id="Title" alt="Logo" src="images/Logo1.png" style="float: left; padding-right: 15px;"> 
+            <!-- The NavBar -->
+            <div id="navBar" style="text-align: center;">
+                <br>
+                <ul>
+                    <li class="nav" id="active"><a href="#topBar">Home</a> </li>
+                    <!--Takes user to the Top -->
+                    <li class="nav"><a href="#abtus">Who we Are</a> </li>
+                    <!-- SmoothScrolls User to the about us section -->
+                    <li class="nav"><a href="#services">Services</a> </li>
+                    <!-- Smooth Scrolls user to the Services Section-->
+                    <li class="nav"><a href="#location">Location</a> </li>
+                    <!-- Smooth Scrolls user to the Location Section-->
+                    <li class="nav"><a href="Pricing.html">Pricing</a> </li>
+                    <!-- Takes user to Pricing Page-->
+                </ul>
+                <br>
+            </div>
+        </div>
+        <!-- The div with all the content (For the page transitions)-->
+        <div class="content">
+            <!-- Background Video -->
+            <div class="container">
+                <video id="video" style="width:100%; height:100%" autoplay muted loop>
+                    <source src="videos/Editor.mp4" type="video/mp4">
+                    It appears that your browser does not support video playback 
+                </video>
+                <script>
+                    document.getElementById('video').play();
+                </script> 
+                <!-- Text Overlayed on the Video -->
+                <div class="overlay">
+                    <h2 style="text-align: center; font-size: 100px; color:white; ">&nbsp;</h2>
+                    <br>
+                    <h2  style="text-align: center; font-size: 100px; color:white; ">Welcome to TechMaster Property Management</h2>
+                    <p class="whiteText" style="text-align: center; font-size: 50px;  color:white;">For all Your Property Management Needs</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- "Who we Are" Section -->
+            <div id="abtus" style="float: left; width: 100%; padding-left: 5px; padding-right: 5px">
+                <img src="images/pexels-expect-best-323780.jpg" alt="Building" style="float: right; padding-top: 12px; width:40%;">
+                <h2 class="orangeText">&nbsp;</h2>
+                <h2 class="orangeText">Who we Are</h2>
+                <p class="whiteText" id="space">Here at TMPM, we specialize in affordable, yet amazing property management. We believe that your comfort and peace of mind comes FIRST. Which is why we are one of the only companies that can offer a rental guarantee</p>
+                <p class="whiteText">Whether its a small condo in the middle of nowhere, a spacious penthouse suite in the heights of Beverly, a rundown house in the worst of neighbourhoods, or a giant mansion in in the Hills of Hollywood, we've got you covered</p>
+                <p class="whiteText">As property managers, we understand the frustration of missing rent and problematic tenants, which is why we ensure your rent gets to you on time in full. We remove all the stress and headache of managing that yourself, and add a few extra perks to sweeten the deal :)</p>
+                <p class="whiteText">&nbsp;</p>
+            </div>
+            <br>
+            <br>
+            <h2 class="orangeText" style="text-align: center;">&nbsp;</h2>
+            <h2 id="services" class="orangeText" style="text-align: center;">Services</h2>
+            <p class = "whiteText" style="text-align: center">Our services cover all your bases. Depending on which plan you choose.</p>
+            <!--WhiteSpace -->
+            <p class="whiteText">&nbsp;</p>
+            <!-- All the Divs which change color when hovered -->
+            <div style="float: left; width: 33%">
+                <div class="service">
+                    <img class="cntrImg" src="images/life-insurance.png" alt="insurance logo" width="50">
+                    <h2 class="cntrTxt">Insurance</h2>
+                    <p class="cntrTxt">Coverage for any damage caused by tennants</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+                <div class="service">
+                    <img class="cntrImg" src="images/hand.png" alt="Rent Collection" width="50">
+                    <h2 class="cntrTxt">Rent Collection</h2>
+                    <p class="cntrTxt">We deal with all the rent collection so you don't have to</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+                <div class="service">
+                    <img class="cntrImg" src="images/auction.png" alt="Legal Fees" width="50">
+                    <h2 class="cntrTxt"> Legal Fees </h2>
+                    <p class="cntrTxt">Our plans include coverage for any legal fees you may encouter</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+            </div>
+            <div style="float: left; width: 33%">
+                <div class="service">
+                    <img class="cntrImg" src="images/armchair.png" alt="Sofa" width="50">
+                    <h2 class="cntrTxt">Furnishing</h2>
+                    <p class="cntrTxt">We can furnish and stage your property before listing, making it more appealing to buyers</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+                <div class="service">
+                    <img class="cntrImg" src="images/apartment.png" alt="Apartment" width="50">
+                    <h2 class="cntrTxt">Listing on Our Database</h2>
+                    <p class="cntrTxt">We will post your property on our database, with 1000s of potential tennants</p>
+                </div>
+                <div class="service">
+                    <img class="cntrImg" src="images/engineer.png" alt="Renovation" width="50">
+                    <h2 class="cntrTxt"> Discounted Renos </h2>
+                    <p class="cntrTxt">Thinking of Renovating? A membership with us grants you access to discounted rates!</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+            </div>
+            <div style="float: right; width: 33%">
+                <div class="service">
+                    <img class="cntrImg" src="images/kick.png" alt="Eviction" width="50">
+                    <h2 class="cntrTxt">Eviction</h2>
+                    <p class="cntrTxt">Problematic tennants? No problem! We deal with the eviction so you don't have to</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+                <div class="service">
+                    <img class="cntrImg" src="images/inspection.png" alt="Inspection" width="50">
+                    <h2 class="cntrTxt">Home Inspection</h2>
+                    <p class="cntrTxt">We cover all home inspection costs, prior to tennants move-in date</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+                <div class="service">
+                    <img class="cntrImg" src="images/tools.png" alt="24/7 Repair" width="50">
+                    <h2 class="cntrTxt">24/7 Repairs</h2>
+                    <p class="cntrTxt" >Our plans come with 24/7 repairs for your tennants</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+            </div>
+            <!-- About Our CEO section -->
+            <div id="CEO">
+                <h2 class="orangeText" style="padding-left: 15px;">About Our CEO</h2>
+                <!-- Stock Image of CEO --> 
+                <img src="images/pexels-andrea-piacquadio-3778876.jpg" alt="CEO Image" style="float: right; width: 250px">
+                <p id="ceoText" class="whiteText" style="padding-left: 15px; padding-right: 5px">Hi! My name is Ibrahim Chehab, and I own TechMaster Property Management Ltd. I grew up in Mississauga. I started off my career as a landlord and realized that a lot of property management companies were horrible. A lot of them ended up taking my money and not providing me any tenants! And a lot of the companies with a rental guarantee were way to expensive. I knew I wasn't the only person dealing with the phenomenon, so I figured I'd do something about it. That's when I founded TechMaster Property Management, an affordable property management company with a rental guarantee. Since then, my company has grown to be one of the biggest property management companies in the world, offering more services than anyone at the same price-point!</p>
+            </div>
+            <br>
+            <br>
+            <div style="text-align: right; display: block">
+                <!-- Picture of Building --> <img src="images/pexels-expect-best-323705.jpg" width="300" alt="building" style="float:left">
+                <h2 class="orangeText" style="padding-right: 25px;">Our Mission</h2>
+                <p class="whiteText">Our mission is to bring affordable, yet exceptional property management to as many users as possible. We believe that property management shouldn't be a nightmare, which is why our team of skilled and experienced team are ready to help you with all your property management needs. We also believe in full transparency with our clients, which is why there are no hidden fees, charges, or quotas to meet. Your membership fee covers everything.</p>
+            </div>
+            <h2 class="orangeText">&nbsp;</h2>
+            <h2 class="orangeText">&nbsp;</h2>
+            <div id="location"> </div>
+            <h2 class="orangeText" style="text-align: center">Location:</h2>
+            <p class="cntrTxt"><i>We are located near Square One, in the heart of Mississauga, for your convenience</i></p>
+            <!-- Google Maps interactive map -->
+            <iframe class="cntrImg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.804707443513!2d-79.64419148450436!3d43.58978397912344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4729ab86756b%3A0xd6e0342bd1a60d8!2sCity%20Centre%20Dr%20%26%20Mercer%20St%2C%20Mississauga%2C%20ON%20L5B%203C8!5e0!3m2!1sen!2sca!4v1601930724122!5m2!1sen!2sca" height="450" style="border:0; width:100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <br>
+        </div>
+        <br>
+        <!--Google Calendar Interactive Calendar-->
+        <h2 class="orangeText" style="text-align: center">Calendar:</h2>
+        <p class="cntrTxt"><i>Here you can find our monthly calendar with important dates</i></p>
+        <div id="cal">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23F09300&amp;ctz=America%2FToronto&amp;src=Ymg3bDlvdm1sZGFiNW9kNHNpYmY2aW52Z3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB" style="border-width:0" width="800" height="600"></iframe>
+        </div>
+        <!--Footer -->
+        <div id="footer">
+            <a class="anchorCntc" href="mailto:website@TMPM.com"><img class="ContactImage" alt="email logo" src="images/email.png" style="float: left;" width="25"/></a>
+            <p class="contact" id="mail" style="text-align: left;"><a href="mailto:website@TMPM.com">&nbsp; website@TMPM.com</a></p>
+            <a class="anchorCntc" style="float:left" href="tel:6474044004"><img class="ContactImage" src="images/phone-call.png" width="25" alt="phone logo" style="float:left; padding-bottom: 0px"></a>
+            <p id="phone" style="text-align: left;"><a href="tel:6474044004">&nbsp; (647)-404-TMPM</a></p>
+            <a  target="_blank" class="anchorCntc" href="https://mississauga.ca/"><img class="ContactImage" alt="Mississauga logo" src="images/Asset1.png" style="float: left;" width="25"/></a>
+            <p class="contact" id="miss" style="text-align: left;"><a  target="_blank" href="https://mississauga.ca/">&nbsp;Mississauga.ca</a></p>
+            <p style="text-align: center; font-size: 12px">Website by Ibrahim Chehab</p>
+        </div>
+    </body>
+</html>

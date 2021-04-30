@@ -1,0 +1,147 @@
+/*Main Home Page*/
+.BA {
+  background-image: url("https://www.teahub.io/photos/full/48-480241_bakery-hd.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-family: Brush Script MT;
+  font-size: 25px;
+  color: white;
+}
+/*Menu Page*/
+.BB {
+  background-image: url("../Images/Wood.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-family: Brush Script MT;
+  font-size: 15px;
+  color: white;
+}
+/*About Page*/
+.BC {
+  background-image: url("../Images/Wood.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-family: Brush Script MT;
+  font-size: 25px;
+  color: white;
+}
+/*Contact Page*/
+.BD {
+  background-image: url("../Images/Wood.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-family: Brush Script MT;
+  font-size: 25px;
+  color: white;
+}
+#title {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 75px;
+  display: block;
+}
+.hometitle {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 75px;
+  display: block;
+}
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navB {
+  float: left;
+  font-size: 25px;
+}
+.navC {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navB a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navB a:hover {
+  background-color: #111;
+}
+.navC a:hover {
+  background-color: #111;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+.service {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.service:hover {
+  background-color: #DFA974;
+  ;
+}
+.cntrImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.cntrTxt {
+  text-align: center;
+  color: white;
+}
+.service {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.service:hover {
+  background-color: #DFA974;
+  ;
+}
+.foot {
+  padding: 3px;
+  text-align: center;
+  color: white;
+}
+.audio {
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: white;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  animation: transitionIn 0.75s;
+}
+
+.textonleft {
+  margin-left: 50px;
+  
+}

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Importing the Characterset-->
+        <meta charset="utf-8">
+        <!--Internal CSS -->
+        <style>
+            td { /*Styling the table elements*/
+            text-align: center;
+            font-size: 20px;
+            }
+            th {
+            font-size: 25px;
+            }
+            .whiteText { /*Class for all elements that have white text, whihc changes line height*/
+            line-height: 2;
+            }
+            .orangeText { /*Class for all text that needs to be orange*/
+            color: #DFA974;
+            }
+            h1, h2, a, h3, th, td, caption, label, input { /*Styling all elements to have the Open Sans Font*/
+            font-family: 'Open Sans', sans-serif;
+            }
+            p { /*Stylinf the p element to have the Roboto font, which compliments Open Sans nicely*/
+            font-family: 'Roboto', sans-serif;
+            }
+            #topBar { /*Styling the top bar*/
+            margin: 0;
+            padding-top: 0px;
+            background-color: #DFA974;
+            }
+            #Title { /*Styling the title image*/
+            margin: 0px;
+            margin-left: 10px !important;
+            padding-left: 5px !important;
+            border: 1px;
+            font-size: 35px;
+            color: white;
+            text-align: justify;
+            }
+            caption {
+            font-style: italic;
+            }
+        </style>
+        <!--Website Title-->
+        <title>TMPM: Pricing</title>
+        <!--Importing style.css (External CSS)-->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- Importing fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+        <!--Importing Favicon-->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <!-- Startup Sound in iFrame to ensure compatability -->
+        <iframe src="other/kaching.mp3" allow="autoplay" style="display:none" id="iframeAudio"> </iframe>
+        <!--Top Bar -->
+        <div id="topBar">
+            <img id="Title" alt="Logo" src="images/Logo1.png" style="float: left; padding-right: 15px;"> 
+            <!--Nav bar-->
+            <div id="navBar" style="text-align: center;">
+                <br>
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a> </li>
+                    <li class="nav"><a href="index.html">Who we Are</a> </li>
+                    <li class="nav"><a href="index.html">Services</a> </li>
+                    <li class="nav" id="active"><a href="#topBar">Pricing</a> </li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <!-- Content div for page transitions -->
+        <div class="content">
+            <!--Container for video -->
+            <div class="container">
+                <video id="video" style="width:100%; height:100%" autoplay loop muted>
+                    <source src="videos/Editor.mp4" type="video/mp4">
+                    It appears that your browser does not support video playback 
+                </video>
+                <div class="overlay">
+                    <!-- Text that is overlayed ontop of video-->
+                    <h2 style="text-align: center; font-size: 100px; color:white; ">&nbsp;</h2>
+                    <br>
+                    <h2 style="text-align: center; font-size: 100px; color:white;">Pricing</h2>
+                    <p class="whiteText" style="text-align: center; font-size: 50px;  color:white;">The Highest Quality, yet the Most Affordable</p>
+                </div>
+            </div>
+            <h2 class="orangeText" style="text-align: center">Here at TMPM, we offer the Following Plans:</h2>
+            <br>
+            <!--All the Divs which change color when hovered over-->
+            <div style="float: left; width: 25%">
+                <div class="service">
+                    <img class="cntrImg" src="images/bronze-medal.png" alt="insurance logo" width="50">
+                    <h2 class="cntrTxt">Bronze</h2>
+                    <p class="cntrTxt">Basic Coverage. Reccomended for low-end properties/short term rentals </p>
+                </div>
+            </div>
+            <div style="float: left; width: 25%">
+                <div class="service">
+                    <img class="cntrImg" src="images/silver-medal.png" alt="Sofa" width="50">
+                    <h2 class="cntrTxt">Silver</h2>
+                    <p class="cntrTxt">More coverage, reccomended for most landlords</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+            </div>
+            <div style="float: left; width: 25%">
+                <div class="service">
+                    <img class="cntrImg" src="images/gold-medal.png" alt="Eviction" width="50">
+                    <h2 class="cntrTxt">Gold</h2>
+                    <p class="cntrTxt">Moderate Coverage. Reccomended for higher end properties</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+            </div>
+            <div class="service" style="float: right; width: 25%;">
+                <div class="service">
+                    <img class="cntrImg" src="images/medal.png" alt="Eviction" width="50">
+                    <h2 class="cntrTxt">Diamond</h2>
+                    <p class="cntrTxt">Our highest coverage package. Reccomended for premium properties</p>
+                    <h2 class="orangeText">&nbsp;</h2>
+                </div>
+            </div>
+            <h2 style="text-align: center" class="orangeText">Features:</h2>
+            <p class="cntrTxt" style="font-weight: 100"><i>All our packages include: Tenant Screening, our Rental Guarantee, and access to your own TMPM Advisor</i></p>
+            <br>
+            <div style="float: left; width: 25%">
+                <div class="service">
+                    <p class="features">Rent Collection and Forwarding</p>
+                    <p class="features">Listing on TMPM Database</p>
+                    <p class="features">Up to $1000 Insurance</p>
+                    <p class="features">35% Legal Fees Coverage</p>
+                </div>
+            </div>
+            <div style="float: left; width: 25%">
+                <div class="service">
+                    <p class="features">Rent Collection and Forwarding</p>
+                    <p class="features">Listing on TMPM Database</p>
+                    <p class="features">Up to $10,000 Insurance</p>
+                    <p class="features">55% Legal Fees Coverage</p>
+                    <p class="features">Complimentary Home Furnishing and Inspection</p>
+                    <p class="features">Access to Eviction Services</p>
+                </div>
+            </div>
+            <div style="float: left; width: 25%">
+                <div class="service">
+                    <p class="features">Rent Collection and Forwarding</p>
+                    <p class="features">Listing on TMPM Database</p>
+                    <p class="features">Up to $50,000 Insurance</p>
+                    <p class="features">75% Legal Fees Coverage</p>
+                    <p class="features">Complimentary Home Furnishing and Inspection</p>
+                    <p class="features">Access to Discounted Renovations</p>
+                    <p class="features">Access to Eviction Services</p>
+                    <p class="features">Complimentary access to 24/7 Repair services</p>
+                </div>
+            </div>
+            <div class="service" style="float: right; width: 25%;">
+                <div class="service">
+                    <p class="features">Rent Collection and Forwarding</p>
+                    <p class="features">Listing on TMPM Database</p>
+                    <p class="features">Up to $250,000 Insurance</p>
+                    <p class="features">100% Legal Fees Coverage</p>
+                    <p class="features">Complimentary Home Furnishing and Inspection</p>
+                    <p class="features">Access to Discounted Renovations</p>
+                    <p class="features">Access to Eviction Services</p>
+                    <p class="features">Complimentary access to 24/7 Repair services</p>
+                    <p class="features">Complimentary access to TMPM Lawyers</p>
+                </div>
+            </div>
+            <!-- Table with all the prices-->
+            <table style="width:100%" id="t01">
+                <caption>
+                    Note: All prices are per-property, per month
+                </caption>
+                <tr>
+                    <th>Plan</th>
+                    <th>1-3 Properties</th>
+                    <th>4-7 Properties</th>
+                    <th>8-10 Properties</th>
+                    <th>10+ Properties</th>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>$39.99</td>
+                    <td>$33.99</td>
+                    <td>$29.99</td>
+                    <td>$25.99</td>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>$49.99</td>
+                    <td>$45.99</td>
+                    <td>$39.99</td>
+                    <td>$35.99</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>$79.99</td>
+                    <td>$75.99</td>
+                    <td>$69.99</td>
+                    <td>$65.99</td>
+                </tr>
+                <tr>
+                    <td>Diamond</td>
+                    <td>$250.99</td>
+                    <td>$175.99</td>
+                    <td>$125.99</td>
+                    <td>$119.99</td>
+                </tr>
+            </table>
+            <br>
+            <!-- Dummy form for 10+ Property coverage-->
+
+			<div class="centerDiv" style="align-content: center">
+				<h2 class="cntrTxt">Need Coverage for more than 10 properties? Own an Apartment Complex/Condominium? Email us for bulk rates!</h2>
+                <form style="text-align-last: center">
+                    <label for="fname">First name:</label>
+                    <br>
+                    <input type="text" id="fname" name="fname">
+                    <br>
+                    <label for="lname">Last name:</label>
+                    <br>
+                    <input type="text" id="lname" name="lname">
+                    <br>
+                    <label for="Email">Email:</label>
+                    <br>
+                    <input type="email" id="Email" name="lname">
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <!-- Footer-->
+        <div id="footer">
+            <a class="anchorCntc" href="mailto:website@TMPM.com"><img class="ContactImage" alt="email logo" src="images/email.png" style="float: left;" width="25"/></a>
+            <p class="contact" id="mail" style="text-align: left;"><a href="mailto:website@TMPM.com">&nbsp; website@TMPM.com</a></p>
+            <a class="anchorCntc" style="float:left" href="tel:6474044004"><img class="ContactImage" src="images/phone-call.png" width="25" alt="phone logo" style="float:left; padding-bottom: 0px"></a>
+            <p id="phone" style="text-align: left;"><a href="tel:6474044004">&nbsp; (647)-404-TMPM</a></p>
+            <a  target="_blank" class="anchorCntc" href="https://mississauga.ca/"><img class="ContactImage" alt="Mississauga logo" src="images/Asset1.png" style="float: left;" width="25"/></a>
+            <p class="contact" id="miss" style="text-align: left;"><a  target="_blank" href="https://mississauga.ca/">&nbsp;Mississauga.ca</a></p>
+            <p style="text-align: center; font-size: 12px">Website by Ibrahim Chehab</p>
+        </div>
+    </body>
+</html>

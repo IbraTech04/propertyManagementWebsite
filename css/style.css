@@ -1,0 +1,163 @@
+@charset "utf-8"; /*Defning CharacterSet*/
+/* CSS Document */
+html {
+  scroll-behavior: smooth; /*Adding Smooth Scrolling*/
+}
+body{ /*Removing Overflow from X axis */
+	overflow-x: hidden;
+}
+#navBar { /*Styling the nav-bar, making it a nice shade of orange */
+  background-color: #DFA974;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav { /*Styling the nav-bar's li anchors*/
+  display: inline;
+  font-weight: bold;
+  color: white;
+  float: left;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav a { /* Further styling the nav-bar links, removing the dot from the li, diplaying the anchors as a block, making their color white, and adding padding*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: width 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+ul { /*Final Styling of the nav bar, adding overflow rules, margins, and list-style-type */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav a:hover { /* Extra touch to the nav bar, making it so that whenever you hover over any of the blocks, it changes color */
+  background-color: #DF9955;
+  font-size: 19px;
+}
+.ContactImage { /* Styling the Contact Images (Mail and Phone) */
+  transition-delay: 1s; /* Defning Transitions for this element */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.ContactImage:hover {
+  /* When this element is hovered over, the width changes to 30px*/
+  width: 30px;
+}
+html, body, div, p, h1, h2, h3 { /*Defining margins, padding, and borders for the main elements*/
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  padding: 0px;
+  border: 1px;
+}
+#t01 tr:nth-child(even) { /*Styling Table Color*/
+  background-color: #DFA974;
+}
+#t01 tr:nth-child(odd) { /*Styling Table Color */
+  background-color: whitesmoke;
+}
+#mail, #phone { /*Syling mail and phone icons */
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 7px;
+  transition-delay: 1s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.service { /*Defining Transitions for all the services */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.service:hover { /*Changing color when a service div is hovered over*/
+  background-color: #DFA974;
+}
+.container { /*Styling the container with the video */
+  position: relative;
+}
+.container video { /*Styling hte video within the container div, making it go behind everything and have a reletive position */
+  position: relative;
+  z-index: 0;
+}
+.overlay { /*Styling the overlay text that goes over the video */
+  position: absolute;
+  align-self: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.contact { /*Styling the Contact Div*/
+  padding-right: 8px;
+}
+a:link { /*Styling anchor links to be white and not have the line underneath */
+  text-decoration: none;
+  color: white;
+}
+.cntrImg { /*A class for all images that need to be centered*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cntrTxt { /*A class for all text that needs to be centered*/
+  text-align: center;
+}
+#active { /*An ID for the current tab for hte nav bar*/
+  background-color: #FCBA79;
+}
+.features { /*Styling the features of each plan*/
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.7;
+}
+/* Defining keyframes for the webpage transitions */
+@keyframes transitionIn {
+  from { /*Go from 0 opacity and -10 y*/
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { /* To 1 opacity and 0 y*/
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.content { /*Animates the content comming in with keyframes defined before */
+  animation: transitionIn 0.75s;
+}
+#footer { /*Styling the footer */
+  background-color: #DFA974;
+}
+#Title { /*Styling the title logo and defining transitions*/
+  width: 150px;
+  transition-delay: 1s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#Title:hover { /*When title is hoevered on change size to 170px*/
+  width: 170px;
+}
+.centerDiv { /*Class for CenterDivs*/
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#cal {
+    margin: auto;
+    width: 800px;
+    padding: 10px;
+  
+}
+form { /*Styling forms to be in the center*/
+  margin: 0 auto;
+  width: 250px;
+}
